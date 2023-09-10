@@ -10,8 +10,8 @@
         <div class="content">
             <header>
                 <div class="wrapper-header">
-                    <div>
-                        <img src="logo.png" width="100">
+                    <div class="style-logo">
+                        <img src="site-logo.png" width="60">
                     </div>
                     <div class="contact-info">
                         <span>Телефон: 8-988-888-88-88</span><br>
@@ -31,39 +31,65 @@
                 <aside class="page-navigation">
                     <ul class="page-navigation-list">
                         <li class="page-navigation-item"><button id="Application" class="page-navigation-button" 
-                            onclick="openWindow(event, 'Application')">Приложения</button></li>
+                            onclick="openWindow(event, 'application-page')">Приложения</button></li>
                         <li class="page-navigation-item">
                             <button class="page-navigation-button" onclick="openOrCloseMenu(event)">Веб-разработка</button>
-                            <ul class="page-navigation-list" id="Hidden">
+                            <ul class="page-navigation-list hidden-list" id="Hidden">
                                 <li class="page-navigation-item"><button id="Frontend" class="page-navigation-button" 
-                                    onclick="openWindow(event, 'Frontend')">Frontend</button></li>
+                                    onclick="openWindow(event, 'frontend-page')">Frontend</button></li>
                                 <li class="page-navigation-item"><button id="Backend" class="page-navigation-button" 
-                                    onclick="openWindow(event, 'Backend')">Backend</button></li>
+                                    onclick="openWindow(event, '')">Backend</button></li>
                             </ul>
                         </li>
                         <li class="page-navigation-item"><button id="Blockchain" 
-                            class="page-navigation-button" onclick="openWindow(event, 'Blockchain')">Blockchain</button></li>
+                            class="page-navigation-button" onclick="openWindow(event, '')">Blockchain</button></li>
                     </ul>
                 </aside>
                 <main class="main-information">
-                    <div class="information-item">
+                    <div class="information-item frontend-page">
                         <h2>Разработка сайтов</h2>
                         <p>Съешь ещё этих мягких мягких французских булок, да выпей же чаю. 
                             Съешь ещё этих мягких мягких французских булок, да выпей же чаю.</p>
                     </div>
-                    <div class="information-item">
+                    <div class="information-item frontend-page">
                         <h2>Сайты под ключ</h2>
                         <p>Съешь ещё этих мягких мягких французских булок, да выпей же чаю. 
                             Съешь ещё этих мягких мягких французских булок, да выпей же чаю.</p>
                     </div>
-                    <div class="information-item">
+                    <div class="information-item frontend-page">
                         <h2>Уникальная разработка</h2>
                         <p>Съешь ещё этих мягких мягких французских булок, да выпей же чаю. 
                             Съешь ещё этих мягких мягких французских булок, да выпей же чаю.</p>
+                    </div>
+                    <div class="information-item application-page">
+                        <h2>Разработка приложений</h2>
+                        <div class="app-icons">
+                            <div class="app-icon-elem">
+                                <img src="youtube-icon.png">
+                                <span>YouTube</span>
+                            </div>
+                            <div class="app-icon-elem">
+                                <img src="twitch-icon.png">
+                                <span>Twitch</span>
+                            </div>
+                            <div class="app-icon-elem">
+                                <img src="discord-icon.png">
+                                <span>Discord</span>
+                            </div>
+                        </div>
+                        <div class="application-text">
+                            <p>Съешь ещё этих мягких мягких французских булок, да выпей же чаю. 
+                                Съешь ещё этих мягких мягких французских булок, да выпей же чаю.</p>
+                            <p>Съешь ещё этих мягких мягких французских булок, да выпей же чаю
+                                Съешь ещё этих мягких мягких французских булок, да выпей же чаю</p>
+                        </div>
                     </div>
                 </main>
             </div>
             <footer class="page-footer"></footer>
         </div>
+        <script>
+            document.getElementById("Application").click();
+        </script>
     </body>
 </html>
