@@ -70,6 +70,10 @@ body {
     background-color: aqua; 
 }
 
+.page-navigation-item {
+    margin-left: 10px;
+}
+
 .main-information {
     padding: 10px;
 }
@@ -91,6 +95,16 @@ body {
     height: 50px;
 }
 
-/* .hidden-item {
-    display: none;
-} */
+.page-navigation-button {
+    background-color: inherit;
+    border: none;
+}
+
+.page-navigation-button:active {
+    border: none;
+    outline: none;
+}
+
+.bold-button {
+    font-weight: bold;
+}

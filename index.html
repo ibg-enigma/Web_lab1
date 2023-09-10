@@ -30,15 +30,19 @@
             <div class="wrapper-main">
                 <aside class="page-navigation">
                     <ul class="page-navigation-list">
-                        <li class="page-navigation-item"><a class="page-navigation-item" href="#">Приложения</a></li>
+                        <li class="page-navigation-item"><button id="Application" class="page-navigation-button" 
+                            onclick="openWindow(event, 'Application')">Приложения</button></li>
                         <li class="page-navigation-item">
-                            <a class="page-navigation-item" href="#">Веб-разработка</a>
-                            <ul class="page-navigation-list hidden-item">
-                                <li class="page-navigation-item"><a class="page-navigation-item" href="#">Frontend</a></li>
-                                <li class="page-navigation-item"><a class="page-navigation-item" href="#">Backend</a></li>
+                            <button class="page-navigation-button" onclick="openOrCloseMenu(event)">Веб-разработка</button>
+                            <ul class="page-navigation-list" id="Hidden">
+                                <li class="page-navigation-item"><button id="Frontend" class="page-navigation-button" 
+                                    onclick="openWindow(event, 'Frontend')">Frontend</button></li>
+                                <li class="page-navigation-item"><button id="Backend" class="page-navigation-button" 
+                                    onclick="openWindow(event, 'Backend')">Backend</button></li>
                             </ul>
                         </li>
-                        <li class="page-navigation-item"><a class="page-navigation-item" href="#">Blockchain</a></li>
+                        <li class="page-navigation-item"><button id="Blockchain" 
+                            class="page-navigation-button" onclick="openWindow(event, 'Blockchain')">Blockchain</button></li>
                     </ul>
                 </aside>
                 <main class="main-information">
